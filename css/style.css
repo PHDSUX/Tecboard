@@ -1,0 +1,129 @@
+
+/*definicao de fonte externa*/
+@font-face {
+    font-family: "font1";
+    src: url("../fonts/Unbounded-Bold.ttf")
+    format("truetype");
+    font-weight: 700;
+    font-style: "normal";
+    font-display: "swap";
+} 
+@font-face {
+    font-family: "geice";
+    src: url("../fonts/Poppins-Regular.ttf")
+    format("truetype");
+    font-weight: 400;
+    font-style: "normal";
+    font-display: "swap";
+}
+
+/* resetar padding e margem da pagina*/ 
+ * {
+    margin: 0px;
+    padding: 0px;
+ }
+/* estilo desktop*/ 
+ body {
+    background-color: #0E1014;
+    font-family: "geice" ;
+ }
+ h1, p, a {
+    color: #FFFFFF;
+
+ }
+ header img{
+    display: block;
+    margin: 75px 0px 0px 360px
+ }
+ h1 {
+    font-size: 64px;
+    font-family: "font1", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+ }
+ h1 span{
+    color: #9747FF;
+    font-family: "font1", sans-serif;
+ }
+ a{
+    color: #FFFFFF;
+    font-family: "geice";
+    
+    text-decoration: none;
+    background-color: #9747FF;
+    width: 340px;
+    height: 66px;
+    display: block;
+    text-align: center;
+    line-height: 66px;
+    /* posso usar o comando padding seguindo as infos do figma tambem, preciso tomar cuidado, pois o valor ira 
+    somar com o weight and height, nesse caso se eu usar o padding eu teria que apagar wid e o hei do codigo. */
+    border-radius: 36px;
+    /* margin-right: 790px;
+    margin-left: 790px; dessa maneira nao funciona, pois a posicao ira ficar fixa no monitor, e se for menor, ela ira se deslocar para os lados.
+    margin: 100px 790px 10px 790px; funcionaria tambem, mas a melhor opcao seria a de baixo que automatiza as laterais */
+    margin: 40px auto;
+
+ }
+ a:hover{
+   background-color: #8233E8;
+ }
+
+ p{
+    font-family: "geice";
+    font-size: 24px;
+    text-align: center;
+    margin: 24px auto 0;
+    width: 792px;
+ }
+.branquinho{
+    color: aqua;
+ }
+ section img{
+    display: block;
+    width: 792px;
+    height: 446px;
+    margin: 0px auto;
+
+ }
+
+ /* estilo tablet */
+ @media(max-width: 768px){
+    header img{
+    display: block;
+    margin: 65px 0px 0px 60px
+      }
+   p {
+      width: 468px;
+      
+    }
+   a{
+      font-size: 24px;
+
+   }
+ }
+
+ /*estilo mobile */
+ @media(max-width: 375px){
+   header img{
+      margin: 32px 0px 0px 16px;
+   } 
+   h1{
+      font-size: 40px;
+      
+   }
+   p{
+      font-size: 20px;
+      width: 341px;
+   }
+   a{
+      font-size: 20px;
+      width: 251px;
+      
+   }
+   section img{
+      width: 340px;
+      height: 230px;
+   }
+ }
